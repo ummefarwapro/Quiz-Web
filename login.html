@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+
+    <style>
+
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ebe1fd;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Login Card */
+.container {
+    width: 380px;
+    padding: 35px;
+    background: linear-gradient(
+        135deg,
+        #f0e7ff,
+        #ffffff
+    );
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+/* Heading */
+.container h2 {
+    text-align: center;
+    color: #6f42c1;
+    font-size: 30px;
+    margin-bottom: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Labels */
+.label {
+    display: inline-block;
+    color: #6f42c1;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+
+    border: 1px solid #d8c9f5;
+    border-radius: 12px;
+
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+
+    transition: 0.3s ease;
+}
+
+.input:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 0 3px rgba(111, 66, 193, 0.12);
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #6f42c1;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    margin-top: 5px;
+
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #5d32ad;
+    transform: scale(1.03);
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .container h2 {
+        font-size: 26px;
+    }
+
+    .input {
+        padding: 11px 13px;
+    }
+
+    .login-btn {
+        padding: 11px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+
+<h2>Login</h2>
+
+<label for="" class="label">Email</label> <br>
+<input type="email" placeholder="Enter Your Email" class="input" id="email"> <br>
+
+<label for="" class="label">Password</label> <br>
+<input type="password" placeholder="Enter Your Password" class="input" id="pswd"> <br>
+
+
+<button class="login-btn"  id="loginBtn">Login</button>
+
+</div>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

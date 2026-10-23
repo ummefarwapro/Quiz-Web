@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ebe1fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home {
+    min-height: 80vh;
+}
+
+.quiz-card {
+    width: 350px;
+    border-radius: 25px;
+    background: linear-gradient(
+        135deg,
+        #f0e7ff,
+        #ffffff
+    ) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.quiz-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+.quiz-icon {
+    font-size: 55px;
+    color: #6f42c1;
+}
+
+.head {
+    color: #6f42c1;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-text {
+    color: #555;
+    font-size: 15px;
+}
+
+.small-text {
+    color: #6f42c1;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.start-btn {
+    border-radius: 50px;
+    padding: 10px 23px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+}
+
+.quiz-card2 {
+    width: 550px;
+    border-radius: 25px;
+    background-color: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.answer-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    margin-top: 12px;
+    border: 1px solid #d8c9f5;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+}
+
+.answer-option span {
+    border: 1px solid #6f42c1;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #6f42c1;
+    font-weight: bold;
+}
+
+.answer-option p {
+    margin: 0;
+}
+
+.answer-option:hover {
+    background-color: #eee5ff;
+    border-color: #6f42c1;
+}
+
+.ques{
+    font-size: 20px;
+}
+
+.dots{
+    font-size: 13px;
+}
+
+.result-page {
+    max-height: 100vh;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+
+.result{
+    font-size: 25px;
+}
+
+
+.result2{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .quiz-card2 {
+        width: 100%;
+        padding: 10px !important;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .answer-option {
+        font-size: 14px;
+    }
+}
